@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+main {
+    display: block;
+}
+a {
+    background: transparent;
+}
+code, kbd, samp, pre {
+    font-family: monospace;
+    font-size: 1em;
+}
+img {
+    border-style: none;
+}
+button, input, optgroup, select, textarea {
+    line-height: 1.15;
+}
+button, select {
+    text-transform: none;
+}
+button, button[type="button"], button[type="reset"], input[type="submit"] {
+    -moz-appearance: button;
+    -webkit-appearance: button;
+}
+textarea {
+    overflow: auto;
+}

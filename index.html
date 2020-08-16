@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Tic-Tac-Toe">
+        <meta name="keywords" content="Tic-Tac-Toe, Odin Project">
+        <meta name="author" content="Rahul5430">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+        <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300;400&family=Palanquin:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Styles/reset.css">
+        <link rel="stylesheet" href="Styles/style.css">
+        <link rel="icon" href="Images/r-circle-logo.png">
+    </head>
+    <body>
+        <header>
+            <div class="media">
+                <a href="https://github.com/Rahul5430/Tic-Tac-Toe" target="_blank" title="Created by Rahul Sharma. Go to source code.">
+                <img src="Images/r-circle-logo.png" alt="Logo" id="logo" class="img-responsive mr-3 logo">
+                </a>
+                <div class="media-body">
+                    <h1 class="mt-0">Tic-Tac-Toe Game</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="board" id="board">
+                    <span class="board-cell" data-cell-numvber="1">&nbsp;</span>
+                    <span class="board-cell" data-cell-numvber="2">&nbsp;</span>
+                    <span class="board-cell" data-cell-numvber="3">&nbsp;</span>
+                    <span class="board-cell" data-cell-numvber="4">&nbsp;</span>
+                    <span class="board-cell" data-cell-numvber="5">&nbsp;</span>
+                    <span class="board-cell" data-cell-numvber="6">&nbsp;</span>
+                    <span class="board-cell" data-cell-numvber="7">&nbsp;</span>
+                    <span class="board-cell" data-cell-numvber="8">&nbsp;</span>
+                    <span class="board-cell" data-cell-numvber="9">&nbsp;</span>
+                </div>
+                <form action="" method="GET" class="form">
+                    <fieldset class="opponent">
+                        <legend class="opponent-legend">Opponent</legend>
+                        <div class="opponent-box">
+                            <input type="radio" name="opponent" id="player" value="player" class="opponent-input" required checked>
+                            <label for="player" class="opponent-label">Player</label>
+                        </div>
+                        <div class="opponent-box">
+                            <input type="radio" name="opponent" id="computer" value="computer" class="opponent-input" required>
+                            <label for="computer" class="opponent-label">Computer</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="names">
+                        <legend class="names-legend">Player Names</legend>
+                        <div class="names-box">
+                            <label for="p1-name" class="names-label">Player X</label>
+                            <input type="text" name="player-name" id="p1-name" minlength="1" class="names-input" required>
+                        </div>
+                        <div class="names-box">
+                            <label for="p2-name" class="names-label">Player O</label>
+                            <input type="text" name="player-name" id="p2-name" minlength="1" class="names-input" required>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Play Game" class="play-btn">
+                </form>
+            </div>
+            <span class="game-output game-output--hide">&nbsp;</span>
+        </main>
+        <script type="module" src="Scripts/game.js" charset="utf-8"></script>
+    </body>
+</html>
