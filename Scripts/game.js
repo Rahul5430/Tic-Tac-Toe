@@ -49,7 +49,7 @@ const gameController =  (function() {
         if (isWinner(playerOne.marker, boardTuples)) {
             gameWinner = playerOne;
         } else if (isWinner(playerTwo.marker, boardTuples)) {
-            gameWinner = playerTwo
+            gameWinner = playerTwo;
         }
         return (!!gameWinner);
     }
