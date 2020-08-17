@@ -10,7 +10,7 @@ const displayController = (function(doc) {
     const nameInputTwo = doc.getElementById("p2-name");
     const opponentInputOne = doc.getElementById("player");
     const opponentInputTwo = doc.getElementById("computer");
-    const form = doc.querySelector("form");
+    const form = doc.querySelector(".form");
     const gameOutput = doc.querySelector(`.${gameOutputStr}`);
     let gameSettings = {};
 
